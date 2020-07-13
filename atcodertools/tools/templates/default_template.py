@@ -31,7 +31,7 @@ def main():
                 yield word
     tokens = iterate_tokens()
     {{ input_part }}
-    solve({{ actual_arguments }})
+    print(solve({{ actual_arguments }}))
     {% else %}
     # Failed to predict input format
     pass
